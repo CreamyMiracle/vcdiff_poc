@@ -1,0 +1,4067 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Project>
+	<ProjectInfo>
+		<Name>FI_31_VXBD-2734</Name>
+		<URL>D:/vx/dev/fi/vxbd/user/SyncWorkspace/projects/FI_31_VXBD-2734/engineering_output@9.xml</URL>
+		<Software>Vertex BD Pro</Software>
+		<Version>31.0.0-beta</Version>
+		<CreateDate>10.12.2024</CreateDate>
+		<LastChangedDate>2024-12-10 08:11 GMT</LastChangedDate>
+		<RunDate>12/10/2024 10:11:36</RunDate>
+		<UnitLength>mm</UnitLength>
+		<UnitAngle>Degrees</UnitAngle>
+		<UnitForce>kN</UnitForce>
+	</ProjectInfo>
+	<Object ID="31" Level="" Label="Lattia-1" Application="Plane">
+		<Level3D>
+			<Height>0.0000</Height>
+		</Level3D>
+	</Object>
+	<Object ID="32" Level="" Label="Lattia-2" Application="Plane">
+		<Level3D>
+			<Height>3000.0000</Height>
+		</Level3D>
+	</Object>
+	<Object ID="33" Level="" Label="Lattia-3" Application="Plane">
+		<Level3D>
+			<Height>6000.0000</Height>
+		</Level3D>
+	</Object>
+	<Object ID="35" Level="" Label="Lattia-K" Application="Plane">
+		<Level3D>
+			<Height>-3000.0000</Height>
+		</Level3D>
+	</Object>
+	<Object ID="45" Level="1. krs, seinät" Label="Katto-1" Application="Plane">
+		<Level3D>
+			<Height>2752.0000</Height>
+			<Plane ID="32" Surface="Top" Offset="-248.0000"/>
+		</Level3D>
+	</Object>
+	<Object ID="46" Level="" Label="Katto-K" Application="Plane">
+		<Level3D>
+			<Height>-300.0000</Height>
+			<Plane ID="31" Surface="Top" Offset="-300.0000"/>
+		</Level3D>
+	</Object>
+	<Object ID="48" Level="1. krs, seinät" Label="Perustus" Application="Plane">
+		<Level3D>
+			<Height>0.0000</Height>
+			<Plane ID="31" Surface="Top" Offset="0.0000"/>
+		</Level3D>
+	</Object>
+	<Object ID="52" Level="1. krs, seinät" Label="Katto-2" Application="Plane">
+		<Level3D>
+			<Height>5752.0000</Height>
+			<Plane ID="33" Surface="Top" Offset="-248.0000"/>
+		</Level3D>
+	</Object>
+	<Object ID="56" Level="" Label="Lattia-4" Application="Plane">
+		<Level3D>
+			<Height>9000.0000</Height>
+		</Level3D>
+	</Object>
+	<Object ID="58" Level="1. krs, seinät" Label="Katto-3" Application="Plane">
+		<Level3D>
+			<Height>8752.0000</Height>
+			<Plane ID="56" Surface="Top" Offset="-248.0000"/>
+		</Level3D>
+	</Object>
+	<Object ID="60" Level="1. krs, seinät" Label="Lattia-5" Application="Plane">
+		<Level3D>
+			<Height>12000.0000</Height>
+		</Level3D>
+	</Object>
+	<Object ID="61" Level="1. krs, seinät" Label="Katto-4" Application="Plane">
+		<Level3D>
+			<Height>11752.0000</Height>
+			<Plane ID="60" Surface="Top" Offset="-248.0000"/>
+		</Level3D>
+	</Object>
+	<Object ID="62" Level="1. krs, seinät" Label="Lattia-6" Application="Plane">
+		<Level3D>
+			<Height>15000.0000</Height>
+		</Level3D>
+	</Object>
+	<Object ID="63" Level="1. krs, seinät" Label="Katto-5" Application="Plane">
+		<Level3D>
+			<Height>14752.0000</Height>
+			<Plane ID="62" Surface="Top" Offset="-248.0000"/>
+		</Level3D>
+	</Object>
+	<Object ID="83" Level="1. krs, seinät" Label="" EngLabel="" Use="Floor" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+			<Plane ID="31" Surface="Top" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="96" Level="1. krs, seinät" Label="" EngLabel="" Use="Floor" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="102" Level="1. krs, seinät" Label="" EngLabel="" Use="Floor" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="108" Level="1. krs, seinät" Label="" EngLabel="" Use="Floor" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="119" Level="1. krs, seinät" Label="" EngLabel="" Use="Floor" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="125" Level="1. krs, seinät" Label="" EngLabel="" Use="Floor" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="131" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="138" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="144" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="149" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="163" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="167" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="172" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="177" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="186" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="190" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="194" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="198" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="206" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="210" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="214" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="218" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="226" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="230" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="234" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="238" Level="1. krs, seinät" Label="" EngLabel="" Use="Roof" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="265" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="272" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="777" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="782" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="785" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="788" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="791" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="794" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="797" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="800" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="803" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="806" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="829" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="834" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="839" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="844" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="849" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="854" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="859" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="864" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="872" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="877" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="882" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="887" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="892" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="897" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="902" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="279" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="496" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="497" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="498" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="499" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="500" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="501" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="502" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="503" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="504" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="505" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="506" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="507" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="508" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="509" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="510" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="511" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="512" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="513" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="514" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="515" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="516" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="517" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="518" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="519" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="520" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="521" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="522" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="523" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="524" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="525" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="526" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="527" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="528" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="529" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="530" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="531" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="532" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="533" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="534" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="285" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="291" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="911" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="914" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="917" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="920" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="923" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="926" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="929" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="932" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="935" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="938" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="964" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="969" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="974" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="979" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="984" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="989" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="994" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="999" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1004" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1009" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1014" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1019" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1024" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1029" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1034" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="298" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="1039" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1042" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1045" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1048" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1051" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1054" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1057" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1060" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1063" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1066" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1092" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1097" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1102" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1107" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1112" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1117" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1122" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1127" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1132" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1137" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1142" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1147" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1152" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1157" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1162" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="303" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="1168" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1174" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1177" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1180" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1183" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1186" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1189" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1192" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1195" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1198" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1201" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1204" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1207" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1210" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1213" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1216" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1219" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1222" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1225" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1228" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1231" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1234" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1239" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1242" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1245" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1248" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1251" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1254" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1257" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1260" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1263" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1266" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1269" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1272" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1275" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1278" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1281" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1284" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1287" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1290" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1295" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1298" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1301" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1304" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1307" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1310" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1313" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="326" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="331" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="1414" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1417" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1424" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1429" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1434" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1439" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1444" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1449" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1454" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1459" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1464" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1469" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1474" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="336" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="1316" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1317" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1318" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1319" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1320" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1321" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1322" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1323" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1324" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1325" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1326" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1327" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1328" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1329" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1330" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="341" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="346" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="1479" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1482" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1492" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1497" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1502" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1507" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1512" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1517" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1522" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1527" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1532" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1537" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1542" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1547" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1552" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="351" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="1557" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1560" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1570" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1575" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1580" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1585" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1590" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1595" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1600" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1605" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1610" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1615" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1620" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1625" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1630" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="356" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="1635" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1638" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1641" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1644" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1647" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1650" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1653" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1656" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1659" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1662" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1665" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1668" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1671" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1674" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1677" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1680" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1683" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1686" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1689" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1692" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1695" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1698" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1701" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1704" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1707" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="363" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="368" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="1883" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1886" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1889" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1892" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1895" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1908" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1913" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1918" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1923" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1928" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1933" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1938" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1943" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1948" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1953" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1958" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="373" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="1710" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1711" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1712" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1713" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1714" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1715" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1716" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1717" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1718" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1719" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1720" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1721" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1722" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1723" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1724" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1725" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1726" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1727" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1728" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1729" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1730" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1731" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1732" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="378" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="383" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="1963" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1966" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1969" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1972" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1975" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1991" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="1996" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2001" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2006" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2011" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2016" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2021" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2026" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2031" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2036" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2041" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2046" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="388" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="2051" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2054" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2057" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2060" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2063" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2079" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2084" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2089" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2094" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2099" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2104" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2109" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2114" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2119" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2124" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2129" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2134" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="393" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="2139" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2142" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2145" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2148" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2151" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2154" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2157" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2160" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2163" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2166" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2169" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2172" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2175" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2178" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2181" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2185" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2188" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2191" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2194" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2197" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2200" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2203" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2206" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2209" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2212" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2215" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2218" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2221" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2224" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2227" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2230" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2233" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2236" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2239" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2242" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2245" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2248" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2251" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2254" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2257" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2260" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2263" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2266" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2269" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="407" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="412" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="2378" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2381" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2388" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2393" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2398" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2403" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2408" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2413" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2421" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2426" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2431" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2436" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2441" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="417" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="2272" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2273" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2274" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2275" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2276" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2277" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2278" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2279" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2280" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2281" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2282" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2283" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2284" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2285" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2286" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2287" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2288" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2289" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="422" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="427" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="2449" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2452" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2462" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2467" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2472" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2477" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2482" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2487" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2492" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2497" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2502" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2507" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2512" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2517" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="432" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="2522" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2525" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2535" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2540" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2545" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2550" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2555" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2560" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2565" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2570" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2575" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2580" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2585" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2590" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="437" Level="1. krs, seinät, runko" Label="" EngLabel="" Use="Wall" Application="Boundary">
+		<Spacing>0.0000</Spacing>
+		<Support ID="2595" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2598" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2601" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2604" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2607" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2610" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2613" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2616" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2619" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2622" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2625" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2628" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2631" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2634" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2637" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2640" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2643" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2646" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2649" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2652" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2655" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2658" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2661" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2664" Application="" Surface="Below" Comment=""></Support>
+		<Support ID="2667" Application="" Surface="Below" Comment=""></Support>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="496" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="497" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="498" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="499" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>804.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="500" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="501" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>804.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="502" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="503" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="504" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="505" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="506" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>804.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="507" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="508" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>804.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="509" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="510" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="511" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="512" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>804.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="513" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="514" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>804.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="515" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="516" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>804.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="517" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="518" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>804.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="519" Level="1. krs, seinät, runko" Label="D" EngLabel="" Use="Wall" Application="Pielitolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="520" Level="1. krs, seinät, runko" Label="D" EngLabel="" Use="Wall" Application="Pielitolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="521" Level="1. krs, seinät, runko" Label="I" EngLabel="" Use="Wall" Application="Aukkopalkki">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1306.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="522" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Aukon alapuu">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="523" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Aukon yläpuu">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="524" Level="1. krs, seinät, runko" Label="D" EngLabel="" Use="Wall" Application="Pielitolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="525" Level="1. krs, seinät, runko" Label="D" EngLabel="" Use="Wall" Application="Pielitolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="526" Level="1. krs, seinät, runko" Label="I" EngLabel="" Use="Wall" Application="Aukkopalkki">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1306.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="527" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Aukon alapuu">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="528" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Aukon yläpuu">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="529" Level="1. krs, seinät, runko" Label="J" EngLabel="" Use="Wall" Application="Alajuoksu">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7606.5000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="530" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Nurkkatolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="531" Level="1. krs, seinät, runko" Label="A" EngLabel="" Use="Wall" Application="Nurkkatolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="532" Level="1. krs, seinät, runko" Label="K" EngLabel="" Use="Wall" Application="Yläjuoksu">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7606.5000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="533" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Nurkkatolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="534" Level="1. krs, seinät, runko" Label="A" EngLabel="" Use="Wall" Application="Nurkkatolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="777" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="782" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="785" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="788" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="791" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="794" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="797" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="800" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="803" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="806" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="829" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="834" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="839" Level="1. krs, seinät, runko" Label="M" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>852.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="844" Level="1. krs, seinät, runko" Label="N" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>594.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="849" Level="1. krs, seinät, runko" Label="M" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>852.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="854" Level="1. krs, seinät, runko" Label="N" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>594.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="859" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="864" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="872" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="877" Level="1. krs, seinät, runko" Label="M" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>852.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="882" Level="1. krs, seinät, runko" Label="N" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>594.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="887" Level="1. krs, seinät, runko" Label="M" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>852.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="892" Level="1. krs, seinät, runko" Label="N" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>594.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="897" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="902" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="911" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="914" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="917" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="920" Level="1. krs, seinät, runko" Label="S" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="923" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="926" Level="1. krs, seinät, runko" Label="S" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="929" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="932" Level="1. krs, seinät, runko" Label="S" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="935" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="938" Level="1. krs, seinät, runko" Label="S" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="964" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="969" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="974" Level="1. krs, seinät, runko" Label="Q" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>800.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="979" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="984" Level="1. krs, seinät, runko" Label="Q" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>800.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="989" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="994" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="999" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1004" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1009" Level="1. krs, seinät, runko" Label="Q" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>800.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1014" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1019" Level="1. krs, seinät, runko" Label="Q" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>800.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1024" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1029" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1034" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1039" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1042" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1045" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1048" Level="1. krs, seinät, runko" Label="S" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1051" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1054" Level="1. krs, seinät, runko" Label="S" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1057" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1060" Level="1. krs, seinät, runko" Label="S" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1063" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1066" Level="1. krs, seinät, runko" Label="S" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1210.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1092" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1097" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1102" Level="1. krs, seinät, runko" Label="Q" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>800.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1107" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1112" Level="1. krs, seinät, runko" Label="Q" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>800.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1117" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1122" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1127" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1132" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1137" Level="1. krs, seinät, runko" Label="Q" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>800.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1142" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1147" Level="1. krs, seinät, runko" Label="Q" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>800.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1152" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1157" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1162" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1168" Level="1. krs, seinät, runko" Label="X" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1962.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1174" Level="1. krs, seinät, runko" Label="T" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1650.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1177" Level="1. krs, seinät, runko" Label="Y" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1526.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1180" Level="1. krs, seinät, runko" Label="X" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1962.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1183" Level="1. krs, seinät, runko" Label="T" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1650.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1186" Level="1. krs, seinät, runko" Label="Y" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1526.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1189" Level="1. krs, seinät, runko" Label="X" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1962.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1192" Level="1. krs, seinät, runko" Label="T" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1650.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1195" Level="1. krs, seinät, runko" Label="Y" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1526.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1198" Level="1. krs, seinät, runko" Label="X" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1962.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1201" Level="1. krs, seinät, runko" Label="T" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1650.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1204" Level="1. krs, seinät, runko" Label="Y" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1526.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1207" Level="1. krs, seinät, runko" Label="X" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1962.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1210" Level="1. krs, seinät, runko" Label="T" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1650.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1213" Level="1. krs, seinät, runko" Label="Y" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1526.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1216" Level="1. krs, seinät, runko" Label="X" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1962.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1219" Level="1. krs, seinät, runko" Label="T" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1650.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1222" Level="1. krs, seinät, runko" Label="Y" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1526.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1225" Level="1. krs, seinät, runko" Label="X" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1962.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1228" Level="1. krs, seinät, runko" Label="T" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1650.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1231" Level="1. krs, seinät, runko" Label="Y" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1526.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1234" Level="1. krs, seinät, runko" Label="W" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1239" Level="1. krs, seinät, runko" Label="U" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1242" Level="1. krs, seinät, runko" Label="U" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1245" Level="1. krs, seinät, runko" Label="U" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1248" Level="1. krs, seinät, runko" Label="U" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1251" Level="1. krs, seinät, runko" Label="U" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1254" Level="1. krs, seinät, runko" Label="X" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1962.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1257" Level="1. krs, seinät, runko" Label="T" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1650.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1260" Level="1. krs, seinät, runko" Label="Y" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1526.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1263" Level="1. krs, seinät, runko" Label="X" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1962.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1266" Level="1. krs, seinät, runko" Label="T" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1650.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1269" Level="1. krs, seinät, runko" Label="Y" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1526.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1272" Level="1. krs, seinät, runko" Label="X" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1962.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1275" Level="1. krs, seinät, runko" Label="T" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1650.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1278" Level="1. krs, seinät, runko" Label="Y" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1526.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1281" Level="1. krs, seinät, runko" Label="X" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1962.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1284" Level="1. krs, seinät, runko" Label="T" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1650.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1287" Level="1. krs, seinät, runko" Label="Y" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>1526.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1290" Level="1. krs, seinät, runko" Label="V" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1295" Level="1. krs, seinät, runko" Label="U" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1298" Level="1. krs, seinät, runko" Label="U" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1301" Level="1. krs, seinät, runko" Label="U" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1304" Level="1. krs, seinät, runko" Label="U" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1307" Level="1. krs, seinät, runko" Label="U" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1310" Level="1. krs, seinät, runko" Label="U" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1313" Level="1. krs, seinät, runko" Label="U" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1316" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1317" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1318" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1319" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1320" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1321" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1322" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1323" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1324" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1325" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1326" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1327" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Alajuoksu">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7208.5000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1328" Level="1. krs, seinät, runko" Label="A" EngLabel="" Use="Wall" Application="Nurkkatolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1329" Level="1. krs, seinät, runko" Label="D" EngLabel="" Use="Wall" Application="Yläjuoksu">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7208.5000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1330" Level="1. krs, seinät, runko" Label="A" EngLabel="" Use="Wall" Application="Nurkkatolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1414" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1417" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1424" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1429" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1434" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1439" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1444" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1449" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1454" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1459" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1464" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1469" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1474" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1479" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1482" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1492" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1497" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1502" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1507" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1512" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1517" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1522" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1527" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1532" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1537" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1542" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1547" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1552" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1557" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1560" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1570" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1575" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1580" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1585" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1590" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1595" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1600" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1605" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1610" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1615" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1620" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1625" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1630" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1635" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1638" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1641" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1644" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1647" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1650" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1653" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1656" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1659" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1662" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1665" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1668" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1671" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1674" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1677" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1680" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1683" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1686" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1689" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1692" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1695" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1698" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1701" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1704" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1707" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="1710" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1711" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1712" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1713" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1714" Level="1. krs, seinät, runko" Label="D" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1715" Level="1. krs, seinät, runko" Label="D" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1716" Level="1. krs, seinät, runko" Label="D" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1717" Level="1. krs, seinät, runko" Label="D" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1718" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1719" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1720" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1721" Level="1. krs, seinät, runko" Label="D" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1722" Level="1. krs, seinät, runko" Label="D" EngLabel="" Use="Wall" Application="Klossi">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>546.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1723" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Pielitolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1724" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Pielitolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1725" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Pielitolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1726" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Pielitolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1727" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Aukkopalkki">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2602.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1728" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Aukon yläpuu">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2410.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1729" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Alajuoksu">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7208.5000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1730" Level="1. krs, seinät, runko" Label="A" EngLabel="" Use="Wall" Application="Nurkkatolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1731" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Yläjuoksu">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7208.5000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1732" Level="1. krs, seinät, runko" Label="A" EngLabel="" Use="Wall" Application="Nurkkatolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1883" Level="1. krs, seinät, runko" Label="I" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1886" Level="1. krs, seinät, runko" Label="I" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1889" Level="1. krs, seinät, runko" Label="I" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1892" Level="1. krs, seinät, runko" Label="K" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2410.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1895" Level="1. krs, seinät, runko" Label="I" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1908" Level="1. krs, seinät, runko" Label="J" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>594.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1913" Level="1. krs, seinät, runko" Label="J" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>594.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1918" Level="1. krs, seinät, runko" Label="J" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>594.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1923" Level="1. krs, seinät, runko" Label="I" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1928" Level="1. krs, seinät, runko" Label="I" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1933" Level="1. krs, seinät, runko" Label="I" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1938" Level="1. krs, seinät, runko" Label="J" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>594.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1943" Level="1. krs, seinät, runko" Label="I" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1948" Level="1. krs, seinät, runko" Label="I" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1953" Level="1. krs, seinät, runko" Label="I" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1958" Level="1. krs, seinät, runko" Label="I" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1963" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1966" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1969" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1972" Level="1. krs, seinät, runko" Label="N" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2410.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1975" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1991" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="1996" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2001" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2006" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2011" Level="1. krs, seinät, runko" Label="M" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2016" Level="1. krs, seinät, runko" Label="M" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2021" Level="1. krs, seinät, runko" Label="M" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2026" Level="1. krs, seinät, runko" Label="M" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2031" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2036" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2041" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2046" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2051" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2054" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2057" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2060" Level="1. krs, seinät, runko" Label="N" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2410.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2063" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2079" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2084" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2089" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2094" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2099" Level="1. krs, seinät, runko" Label="M" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2104" Level="1. krs, seinät, runko" Label="M" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2109" Level="1. krs, seinät, runko" Label="M" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2114" Level="1. krs, seinät, runko" Label="M" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>542.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2119" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2124" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2129" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2134" Level="1. krs, seinät, runko" Label="L" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2139" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2142" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2145" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2148" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2151" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2154" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2157" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2160" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2163" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2166" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2169" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2172" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2175" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2178" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2181" Level="1. krs, seinät, runko" Label="P" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2185" Level="1. krs, seinät, runko" Label="Q" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2188" Level="1. krs, seinät, runko" Label="Q" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2191" Level="1. krs, seinät, runko" Label="Q" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2194" Level="1. krs, seinät, runko" Label="Q" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2197" Level="1. krs, seinät, runko" Label="Q" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>7746.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2200" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2203" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2206" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2209" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2212" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2215" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2218" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2221" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2224" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2227" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2230" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2233" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2236" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2239" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2242" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2245" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2248" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2251" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2254" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2257" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2260" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2263" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2266" Level="1. krs, seinät, runko" Label="R" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2761.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2269" Level="1. krs, seinät, runko" Label="O" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2535.0000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2272" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2273" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2274" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2275" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2276" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2277" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2278" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2279" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2280" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2281" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2282" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2283" Level="1. krs, seinät, runko" Label="C" EngLabel="" Use="Wall" Application="Tolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2284" Level="1. krs, seinät, runko" Label="D" EngLabel="" Use="Wall" Application="Alajuoksu">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7606.5000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2285" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Nurkkatolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2286" Level="1. krs, seinät, runko" Label="A" EngLabel="" Use="Wall" Application="Nurkkatolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2287" Level="1. krs, seinät, runko" Label="E" EngLabel="" Use="Wall" Application="Yläjuoksu">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7606.5000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2288" Level="1. krs, seinät, runko" Label="B" EngLabel="" Use="Wall" Application="Nurkkatolppa">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2289" Level="1. krs, seinät, runko" Label="A" EngLabel="" Use="Wall" Application="Nurkkatolppa">
+		<Location Type="" AngleA="90" AngleB="0" AngleG="0"></Location>
+		<Angle>0.0</Angle>
+		<Length>2656.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2378" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2381" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2388" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2393" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2398" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2403" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2408" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2413" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2421" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2426" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2431" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2436" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2441" Level="1. krs, seinät, runko" Label="F" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2449" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2452" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2462" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2467" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2472" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2477" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2482" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2487" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2492" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2497" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2502" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2507" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2512" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2517" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2522" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2525" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2535" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2540" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2545" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2550" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2555" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2560" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2565" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2570" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2575" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2580" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2585" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2590" Level="1. krs, seinät, runko" Label="G" EngLabel="" Use="Wall" Application="Koolaus">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>2752.0000</Length>
+		<Level3D>
+		</Level3D>
+	</Object>
+	<Object ID="2595" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2598" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2601" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2604" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2607" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2610" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2613" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2616" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2619" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2622" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2625" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2628" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2631" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="45" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2634" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2637" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2640" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2643" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2646" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2649" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2652" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2655" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2658" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2661" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2664" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<Object ID="2667" Level="1. krs, seinät, runko" Label="H" EngLabel="" Use="Wall" Application="Verhouslauta">
+		<Location Type="" AngleA="0" AngleB="90" AngleG="90"></Location>
+		<Angle>0.0</Angle>
+		<Length>7638.5000</Length>
+		<Level3D>
+			<Plane ID="31" Surface="" Offset="Undefined"/>
+		</Level3D>
+	</Object>
+	<WarningsAndErrors>
+		<Message ID="0" Type="Error" Text="Mitoituskoodia Example ei voida ladata!"></Message>
+	</WarningsAndErrors>
+</Project>

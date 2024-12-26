@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DdI3beYZvoWYq2ZFwtwsow0/7k/FAXCFU6IL4mu78YKQMTSCEPGVQcdjOy0RBSAsq7g2gYoTuLtKry6irlcyKg==",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\vcdiff_poc\\VCDiffPoC\\VCDiffPoC\\VCDiffPoC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rajala\\.nuget\\packages\\microsoft.io.recyclablememorystream\\2.2.0\\microsoft.io.recyclablememorystream.2.2.0.nupkg.sha512",
+    "C:\\Users\\Rajala\\.nuget\\packages\\vcdiff\\4.0.1\\vcdiff.4.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

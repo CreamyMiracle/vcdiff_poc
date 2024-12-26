@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "VCDiffPoC/1.0.0": {
+        "dependencies": {
+          "VCDiff": "4.0.1"
+        },
+        "runtime": {
+          "VCDiffPoC.dll": {}
+        }
+      },
+      "Microsoft.IO.RecyclableMemoryStream/2.2.0": {
+        "runtime": {
+          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "VCDiff/4.0.1": {
+        "dependencies": {
+          "Microsoft.IO.RecyclableMemoryStream": "2.2.0"
+        },
+        "runtime": {
+          "lib/net6.0/VCDiff.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VCDiffPoC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.IO.RecyclableMemoryStream/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uyjY/cqomw1irT4L7lDeg4sJ36MsjHg3wKqpGrBAdzvZaxo85yMF+sAA9RIzTV92fDxuUzjqksMqA0+SNMkMgA==",
+      "path": "microsoft.io.recyclablememorystream/2.2.0",
+      "hashPath": "microsoft.io.recyclablememorystream.2.2.0.nupkg.sha512"
+    },
+    "VCDiff/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mltQHcN/NffnFC/DlJ8x3T/0HT3wDRqkLZHvAlMjH08MmQNEjuSoUxX2bkwnFo9B5IwTArLR602f5EPXmdi9+w==",
+      "path": "vcdiff/4.0.1",
+      "hashPath": "vcdiff.4.0.1.nupkg.sha512"
+    }
+  }
+}
