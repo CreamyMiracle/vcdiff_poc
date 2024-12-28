@@ -45,6 +45,8 @@ namespace VCDiffPoC
             double totalOgSize = 0;
             double totalModSize = 0;
             double totalDiffSize = 0;
+            TimeSpan totalEncodeDuration = TimeSpan.Zero;
+            TimeSpan totalDecodeDuration = TimeSpan.Zero;
 
             foreach (FileInfo file in ogDir.GetFiles())
             {
@@ -57,7 +59,8 @@ namespace VCDiffPoC
                 using VcEncoder coder = new VcEncoder(originalStream, modifiedStream, deltaStream);
                 VCDiffResult encodeRes = coder.Encode();
 
-                var encodeDuration = DateTime.Now - encodeStart;
+                TimeSpan encodeDuration = DateTime.Now - encodeStart;
+                totalEncodeDuration = totalEncodeDuration.Add(encodeDuration);
 
 
 
@@ -82,34 +85,42 @@ namespace VCDiffPoC
                 FileInfo delta = new FileInfo(diffDir.FullName + "\\" + name);
                 FileInfo mod = new FileInfo(modDir.FullName + "\\" + name);
                 FileInfo rec = new FileInfo(recDir.FullName + "\\" + name);
-                PrintFileInfo(file, mod, delta, rec, ref totalOgSize, ref totalModSize, ref totalDiffSize);
+
+                TimeSpan decodeDuration = DateTime.Now - decodeStart;
+                totalDecodeDuration = totalDecodeDuration.Add(decodeDuration);
+
+                PrintFileInfo(file, mod, delta, rec, ref totalOgSize, ref totalModSize, ref totalDiffSize, encodeDuration, decodeDuration);
                 Console.WriteLine("Encoding duration: {0}", encodeDuration.TotalMilliseconds + "ms");
-                Console.WriteLine("Decoding duration: {0}", (DateTime.Now - decodeStart).TotalMilliseconds + "ms");
+                Console.WriteLine("Decoding duration: {0}", decodeDuration.TotalMilliseconds + "ms");
                 Console.WriteLine(Environment.NewLine);
             }
 
-            double modToOg = (totalModSize / totalOgSize) * 100;
+            double modToOg = ((totalModSize / totalOgSize) - 1) * 100;
             double diffToMod = (totalDiffSize / totalModSize) * 100;
-            Console.WriteLine("Total original size: {0}", Math.Round(ConvertBytesToKB(totalOgSize), 1));
-            Console.WriteLine("Total modified size: {0} ({1}%)", Math.Round(ConvertBytesToKB(totalModSize), 1), Math.Round(modToOg, 1));
-            Console.WriteLine("Total diff size: {0} ({1}%)", Math.Round(ConvertBytesToKB(totalDiffSize), 1), Math.Round(diffToMod, 1));
+            Console.WriteLine("Total original size:   {0}kB", Math.Round(ConvertBytesToKB(totalOgSize), 1));
+            Console.WriteLine("Total modified size:   {0}kB ({1}% growth)", Math.Round(ConvertBytesToKB(totalModSize), 1), Math.Round(modToOg, 1));
+            Console.WriteLine("Total diff size:       {0}kB ({1}% compared to modified)", Math.Round(ConvertBytesToKB(totalDiffSize), 1), Math.Round(diffToMod, 1));
+            Console.WriteLine("Total encode duration: {0}", totalEncodeDuration.TotalMilliseconds + "ms");
+            Console.WriteLine("Total decode duration: {0}", totalDecodeDuration.TotalMilliseconds + "ms");
         }
 
-        private static void PrintFileInfo(FileInfo ogFile, FileInfo modFile, FileInfo diffFile, FileInfo recFile, ref double totalOgSize, ref double totalModSize, ref double totalDiffSize)
+        private static void PrintFileInfo(FileInfo ogFile, FileInfo modFile, FileInfo diffFile, FileInfo recFile, ref double totalOgSize, ref double totalModSize, ref double totalDiffSize, TimeSpan encodeDuration, TimeSpan decodeDuration)
         {
             double ogSize = ConvertBytesToKB(ogFile.Length);
             double modSize = ConvertBytesToKB(modFile.Length);
             double diffSize = ConvertBytesToKB(diffFile.Length);
             double recSize = ConvertBytesToKB(recFile.Length);
 
-            double modToOg = (modSize / ogSize) * 100;
+            double modToOg = ((modSize / ogSize) - 1) * 100;
             double diffToMod = (diffSize / modSize) * 100;
 
-            Console.WriteLine("Name: {0}", ogFile.Name);
-            Console.WriteLine("Original: {0}kB", Math.Round(ogSize, 1));
-            Console.WriteLine("Modified: {0}kB --> {1}% compared to original", Math.Round(modSize, 1), Math.Round(modToOg, 1));
-            Console.WriteLine("Difference: {0}kB --> {1}% compared to modified", Math.Round(diffSize, 1), Math.Round(diffToMod, 1));
-            Console.WriteLine("Reconstructed: {0}kB", Math.Round(recSize, 1));
+            Console.WriteLine("Name:              {0}", ogFile.Name);
+            Console.WriteLine("Original:          {0}kB", Math.Round(ogSize, 1));
+            Console.WriteLine("Modified:          {0}kB --> {1}% growth", Math.Round(modSize, 1), Math.Round(modToOg, 1));
+            Console.WriteLine("Difference:        {0}kB --> {1}% compared to modified", Math.Round(diffSize, 1), Math.Round(diffToMod, 1));
+            Console.WriteLine("Reconstructed:     {0}kB", Math.Round(recSize, 1));
+            Console.WriteLine("Encoding duration: {0}", encodeDuration.TotalMilliseconds + "ms");
+            Console.WriteLine("Decoding duration: {0}", decodeDuration.TotalMilliseconds + "ms");
 
             totalOgSize += ogSize;
             totalModSize += modSize;
