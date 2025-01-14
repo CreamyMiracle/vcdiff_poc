@@ -1,6 +1,8 @@
 ﻿using System.Drawing;
+using System.IO.Compression;
 using System.Net.Security;
 using System.Text;
+using System.Xml.Linq;
 using VCDiff.Decoders;
 using VCDiff.Encoders;
 using VCDiff.Includes;
@@ -12,119 +14,266 @@ namespace VCDiffPoC
         private static string Original()
         {
             var dir = new DirectoryInfo(Environment.CurrentDirectory);
-            return dir.Parent.Parent.Parent.Parent.Parent + "\\original";
+            return dir.Parent.Parent.Parent.Parent.Parent + "\\rev1";
         }
 
         private static string Modified()
         {
             var dir = new DirectoryInfo(Environment.CurrentDirectory);
-            return dir.Parent.Parent.Parent.Parent.Parent + "\\modified";
+            return dir.Parent.Parent.Parent.Parent.Parent + "\\rev4";
         }
 
-        private static string Difference()
+        private static string VCDiffEncoded()
         {
             var dir = new DirectoryInfo(Environment.CurrentDirectory);
-            return dir.Parent.Parent.Parent.Parent.Parent + "\\difference";
+            return dir.Parent.Parent.Parent.Parent.Parent + "\\vcdiff_encoded";
         }
 
-        private static string Reconstructed()
+        private static string GZipEncoded()
         {
             var dir = new DirectoryInfo(Environment.CurrentDirectory);
-            return dir.Parent.Parent.Parent.Parent.Parent + "\\reconstructed";
+            return dir.Parent.Parent.Parent.Parent.Parent + "\\gzip_encoded";
         }
 
+        private static string VCDiffDecoded()
+        {
+            var dir = new DirectoryInfo(Environment.CurrentDirectory);
+            return dir.Parent.Parent.Parent.Parent.Parent + "\\vcdiff_decoded";
+        }
+
+        private static string GZipDecoded()
+        {
+            var dir = new DirectoryInfo(Environment.CurrentDirectory);
+            return dir.Parent.Parent.Parent.Parent.Parent + "\\gzip_decoded";
+        }
+
+        private static HashSet<string> _skipExtensions = new HashSet<string> { ".pdf", ".jpg", ".png", ".txt" };
 
         static void Main(string[] args)
         {
             string joo = Original();
             DirectoryInfo ogDir = Directory.CreateDirectory(Original());
-            DirectoryInfo modDir = Directory.CreateDirectory(Modified());
-            DirectoryInfo diffDir = Directory.CreateDirectory(Difference());
-            DirectoryInfo recDir = Directory.CreateDirectory(Reconstructed());
+            Directory.CreateDirectory(Modified());
+            Directory.CreateDirectory(VCDiffEncoded());
+            Directory.CreateDirectory(VCDiffDecoded());
+            Directory.CreateDirectory(GZipEncoded());
+            Directory.CreateDirectory(GZipDecoded());
 
-            double totalOgSize = 0;
-            double totalModSize = 0;
-            double totalDiffSize = 0;
-            TimeSpan totalEncodeDuration = TimeSpan.Zero;
-            TimeSpan totalDecodeDuration = TimeSpan.Zero;
-
-            foreach (FileInfo file in ogDir.GetFiles())
+            for (int i = 0; i < encodeFuncs.Count; i++)
             {
-                string name = file.Name;
-                using var originalStream = File.OpenRead(ogDir.FullName + "\\" + name);
-                using var modifiedStream = File.OpenRead(modDir.FullName + "\\" + name);
-                using var deltaStream = File.Create(diffDir.FullName + "\\" + name);
+                double totalOgSize = 0;
+                double totalModSize = 0;
+                double totalDiffSize = 0;
 
-                DateTime encodeStart = DateTime.Now;
-                using VcEncoder coder = new VcEncoder(originalStream, modifiedStream, deltaStream);
-                VCDiffResult encodeRes = coder.Encode();
+                var encode = encodeFuncs[i];
+                var decode = decodeFuncs[i];
 
-                TimeSpan encodeDuration = DateTime.Now - encodeStart;
-                totalEncodeDuration = totalEncodeDuration.Add(encodeDuration);
+                string funcName = encode.Method.Name;
+                var files = ogDir.GetFiles();
+                int j = 0;
+                foreach (FileInfo file in files)
+                {
+                    j++;
+                    string name = file.Name;
+                    if (_skipExtensions.Contains(file.Extension))
+                    {
+                        continue;
+                    }
 
+                    TimeSpan encodeDuration = encode.Invoke(name);
+                    encodeTime[i] += encodeDuration;
 
+                    TimeSpan decodeDuration = decode.Invoke(name);
+                    decodeTime[i] += decodeDuration;
 
-                // --- Transfer difference files over network ---
+                    PrintFileResult(funcName, file, encodeDir[i], decodeDir[i], ref totalOgSize, ref totalModSize, ref totalDiffSize, encodeDuration, decodeDuration, false);
+                }
+                PrintTotalResult(funcName, totalModSize, totalOgSize, totalDiffSize, encodeTime[i], decodeTime[i]);
+            }
+        }
 
+        private static List<Func<string, TimeSpan>> encodeFuncs = new List<Func<string, TimeSpan>> { VCDiffEncode, GZipEncode };
+        private static List<Func<string, TimeSpan>> decodeFuncs = new List<Func<string, TimeSpan>> { VCDiffDecode, GZipDecode };
+        private static List<Func<string>> encodeDir = new List<Func<string>> { VCDiffEncoded, GZipEncoded };
+        private static List<Func<string>> decodeDir = new List<Func<string>> { VCDiffDecoded, GZipDecoded };
+        private static List<TimeSpan> encodeTime = new List<TimeSpan> { TimeSpan.Zero, TimeSpan.Zero };
+        private static List<TimeSpan> decodeTime = new List<TimeSpan> { TimeSpan.Zero, TimeSpan.Zero };
 
-                originalStream.Position = 0;
-                modifiedStream.Position = 0;
-                deltaStream.Position = 0;
+        private static TimeSpan VCDiffEncode(string name)
+        {
+            DirectoryInfo ogDir = new DirectoryInfo(Original());
+            DirectoryInfo modDir = new DirectoryInfo(Modified());
+            DirectoryInfo diffDir = new DirectoryInfo(VCDiffEncoded());
 
-                using var outputStream = File.Create(recDir.FullName + "\\" + name);
-                DateTime decodeStart = DateTime.Now;
-                using VcDecoder decoder = new VcDecoder(originalStream, deltaStream, outputStream);
-                VCDiffResult decodeRes = decoder.Decode(out long bytesWritten);
+            FileInfo og = new FileInfo(ogDir.FullName + "\\" + name);
+            FileInfo mod = new FileInfo(modDir.FullName + "\\" + name);
+            FileInfo diff = new FileInfo(diffDir.FullName + "\\" + name);
 
+            if (!og.Exists || !mod.Exists)
+            {
+                Console.WriteLine("VCDiffEncode: File " + name + " does not exist");
+                return TimeSpan.Zero;
+            }
 
+            using var originalStream = File.Open(og.FullName, FileMode.Open, FileAccess.Read, FileShare.Read);
+            using var modifiedStream = File.Open(mod.FullName, FileMode.Open, FileAccess.Read, FileShare.Read);
+            using var deltaStream = File.Create(diff.FullName);
 
-                // --- Just printing ---
+            DateTime encodeStart = DateTime.Now;
+            using VcEncoder coder = new VcEncoder(originalStream, modifiedStream, deltaStream);
+            VCDiffResult encodeRes = coder.Encode();
 
+            return DateTime.Now - encodeStart;
+        }
 
+        private static TimeSpan VCDiffDecode(string name)
+        {
+            DirectoryInfo ogDir = new DirectoryInfo(Original());
+            DirectoryInfo recDir = new DirectoryInfo(VCDiffDecoded());
+            DirectoryInfo diffDir = new DirectoryInfo(VCDiffEncoded());
 
-                FileInfo delta = new FileInfo(diffDir.FullName + "\\" + name);
-                FileInfo mod = new FileInfo(modDir.FullName + "\\" + name);
-                FileInfo rec = new FileInfo(recDir.FullName + "\\" + name);
+            FileInfo og = new FileInfo(ogDir.FullName + "\\" + name);
+            FileInfo diff = new FileInfo(diffDir.FullName + "\\" + name);
+            FileInfo rec = new FileInfo(recDir.FullName + "\\" + name);
 
-                TimeSpan decodeDuration = DateTime.Now - decodeStart;
-                totalDecodeDuration = totalDecodeDuration.Add(decodeDuration);
+            if (!og.Exists || !diff.Exists)
+            {
+                Console.WriteLine("VCDiffDecode: File " + name + " does not exist");
+                return TimeSpan.Zero;
+            }
 
-                PrintFileInfo(file, mod, delta, rec, ref totalOgSize, ref totalModSize, ref totalDiffSize, encodeDuration, decodeDuration);
+            using var originalStream = File.Open(og.FullName, FileMode.Open, FileAccess.Read, FileShare.Read);
+            using var deltaStream = File.Open(diff.FullName, FileMode.Open, FileAccess.Read, FileShare.Read);
+            using var outputStream = File.Create(rec.FullName);
+
+            DateTime decodeStart = DateTime.Now;
+            using VcDecoder decoder = new VcDecoder(originalStream, deltaStream, outputStream);
+            VCDiffResult decodeRes = decoder.Decode(out long bytesWritten);
+            return DateTime.Now - decodeStart;
+        }
+
+        private static TimeSpan GZipEncode(string name)
+        {
+            DirectoryInfo ogDir = new DirectoryInfo(Original());
+            DirectoryInfo diffDir = new DirectoryInfo(GZipEncoded());
+
+            FileInfo og = new FileInfo(ogDir.FullName + "\\" + name);
+            FileInfo diff = new FileInfo(diffDir.FullName + "\\" + name);
+
+            if (!og.Exists)
+            {
+                Console.WriteLine("GZipEncode: File " + name + " does not exist");
+                return TimeSpan.Zero;
+            }
+
+            using var originalStream = File.Open(og.FullName, FileMode.Open, FileAccess.Read, FileShare.Read);
+            using var compressedStream = File.Create(diff.FullName);
+            using var gzipStream = new GZipStream(compressedStream, CompressionMode.Compress);
+
+            DateTime encodeStart = DateTime.Now;
+            originalStream.CopyTo(gzipStream);
+            return DateTime.Now - encodeStart;
+        }
+
+        private static TimeSpan GZipDecode(string name)
+        {
+            DirectoryInfo decompressed = new DirectoryInfo(GZipDecoded());
+            DirectoryInfo diffDir = new DirectoryInfo(GZipEncoded());
+
+            FileInfo diff = new FileInfo(diffDir.FullName + "\\" + name);
+            FileInfo dec = new FileInfo(decompressed.FullName + "\\" + name);
+
+            if (!diff.Exists)
+            {
+                Console.WriteLine("GZipDecode: File " + name + " does not exist");
+                return TimeSpan.Zero;
+            }
+
+            using var compressedStream = File.Open(diff.FullName, FileMode.Open, FileAccess.Read, FileShare.Read);
+            using var decompressedStream = File.Create(dec.FullName);
+            using var gzipStream = new GZipStream(compressedStream, CompressionMode.Decompress);
+
+            DateTime decodeStart = DateTime.Now;
+            gzipStream.CopyTo(decompressedStream);
+            return DateTime.Now - decodeStart;
+        }
+
+        private static void PrintTotalResult(string funcName, double totalModSize, double totalOgSize, double totalDiffSize, TimeSpan totalEncodeDuration, TimeSpan totalDecodeDuration)
+        {
+            double modToOg = ((totalModSize / totalOgSize) - 1) * 100;
+            double diffToMod = (totalDiffSize / totalModSize) * 100;
+            double efficiency = totalModSize / totalDiffSize;
+            Console.WriteLine("-----------------------------------------------------------------");
+            Console.WriteLine("Func:                  {0}", funcName);
+            Console.WriteLine("Total original size:   {0}kB", Math.Round(totalOgSize, 1));
+            Console.WriteLine("Total modified size:   {0}kB ({1}% growth)", Math.Round(totalModSize, 1), Math.Round(modToOg, 1));
+            Console.WriteLine("Total diff size:       {0}kB ({1}% compared to modified)", Math.Round(totalDiffSize, 1), Math.Round(diffToMod, 1));
+            Console.WriteLine("Efficiency:            {0}", Math.Round(efficiency, 1));
+            Console.WriteLine("Total encode duration: {0}", totalEncodeDuration.TotalMilliseconds + "ms");
+            Console.WriteLine("Total decode duration: {0}", totalDecodeDuration.TotalMilliseconds + "ms");
+            Console.WriteLine("-----------------------------------------------------------------");
+            Console.WriteLine(Environment.NewLine);
+        }
+
+        private static void PrintFileResult(string funcName, FileInfo ogFile, Func<string> encodeDir, Func<string> decodeDir, ref double totalOgSize, ref double totalModSize, ref double totalEncSize, TimeSpan encodeDuration, TimeSpan decodeDuration, bool print)
+        {
+            DirectoryInfo ogDir = new DirectoryInfo(Original());
+            DirectoryInfo modDir = new DirectoryInfo(Modified());
+            DirectoryInfo encDir = new DirectoryInfo(encodeDir.Invoke());
+            DirectoryInfo decDir = new DirectoryInfo(decodeDir.Invoke());
+
+            string name = ogFile.Name;
+
+            FileInfo encFile = new FileInfo(encDir.FullName + "\\" + name);
+            FileInfo modFile = new FileInfo(modDir.FullName + "\\" + name);
+            FileInfo decFile = new FileInfo(decDir.FullName + "\\" + name);
+
+            double ogSize = 0;
+            FileInfo og = new FileInfo(ogDir.FullName + "\\" + name);
+            if (og.Exists)
+            {
+                ogSize = ConvertBytesToKB(ogFile.Length);
+            }
+
+            double modSize = 0;
+            if (modFile.Exists)
+            {
+                modSize = ConvertBytesToKB(modFile.Length);
+            }
+
+            double encSize = 0;
+            if (encFile.Exists)
+            {
+                encSize = ConvertBytesToKB(encFile.Length);
+            }
+
+            double decSize = 0;
+            if (decFile.Exists)
+            {
+                decSize = ConvertBytesToKB(decFile.Length);
+            }
+
+            double modToOg = ((modSize / ogSize) - 1) * 100;
+            double encToMod = (encSize / modSize) * 100;
+            double efficiency = modSize / encSize;
+
+            if (print)
+            {
+                Console.WriteLine("Func:              {0}", funcName);
+                Console.WriteLine("Name:              {0}", ogFile.Name);
+                Console.WriteLine("Original:          {0}kB", Math.Round(ogSize, 1));
+                Console.WriteLine("Modified:          {0}kB --> {1}% growth", Math.Round(modSize, 1), Math.Round(modToOg, 1));
+                Console.WriteLine("Difference:        {0}kB --> {1}% compared to modified", Math.Round(encSize, 1), Math.Round(encToMod, 1));
+                Console.WriteLine("Efficiency:        {0}", Math.Round(efficiency, 1));
+                Console.WriteLine("Reconstructed:     {0}kB", Math.Round(decSize, 1));
                 Console.WriteLine("Encoding duration: {0}", encodeDuration.TotalMilliseconds + "ms");
                 Console.WriteLine("Decoding duration: {0}", decodeDuration.TotalMilliseconds + "ms");
                 Console.WriteLine(Environment.NewLine);
             }
 
-            double modToOg = ((totalModSize / totalOgSize) - 1) * 100;
-            double diffToMod = (totalDiffSize / totalModSize) * 100;
-            Console.WriteLine("Total original size:   {0}kB", Math.Round(ConvertBytesToKB(totalOgSize), 1));
-            Console.WriteLine("Total modified size:   {0}kB ({1}% growth)", Math.Round(ConvertBytesToKB(totalModSize), 1), Math.Round(modToOg, 1));
-            Console.WriteLine("Total diff size:       {0}kB ({1}% compared to modified)", Math.Round(ConvertBytesToKB(totalDiffSize), 1), Math.Round(diffToMod, 1));
-            Console.WriteLine("Total encode duration: {0}", totalEncodeDuration.TotalMilliseconds + "ms");
-            Console.WriteLine("Total decode duration: {0}", totalDecodeDuration.TotalMilliseconds + "ms");
-        }
-
-        private static void PrintFileInfo(FileInfo ogFile, FileInfo modFile, FileInfo diffFile, FileInfo recFile, ref double totalOgSize, ref double totalModSize, ref double totalDiffSize, TimeSpan encodeDuration, TimeSpan decodeDuration)
-        {
-            double ogSize = ConvertBytesToKB(ogFile.Length);
-            double modSize = ConvertBytesToKB(modFile.Length);
-            double diffSize = ConvertBytesToKB(diffFile.Length);
-            double recSize = ConvertBytesToKB(recFile.Length);
-
-            double modToOg = ((modSize / ogSize) - 1) * 100;
-            double diffToMod = (diffSize / modSize) * 100;
-
-            Console.WriteLine("Name:              {0}", ogFile.Name);
-            Console.WriteLine("Original:          {0}kB", Math.Round(ogSize, 1));
-            Console.WriteLine("Modified:          {0}kB --> {1}% growth", Math.Round(modSize, 1), Math.Round(modToOg, 1));
-            Console.WriteLine("Difference:        {0}kB --> {1}% compared to modified", Math.Round(diffSize, 1), Math.Round(diffToMod, 1));
-            Console.WriteLine("Reconstructed:     {0}kB", Math.Round(recSize, 1));
-            Console.WriteLine("Encoding duration: {0}", encodeDuration.TotalMilliseconds + "ms");
-            Console.WriteLine("Decoding duration: {0}", decodeDuration.TotalMilliseconds + "ms");
-
             totalOgSize += ogSize;
             totalModSize += modSize;
-            totalDiffSize += diffSize;
+            totalEncSize += encSize;
         }
 
         public static double ConvertBytesToKB(double bytes)

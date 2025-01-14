@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "DdI3beYZvoWYq2ZFwtwsow0/7k/FAXCFU6IL4mu78YKQMTSCEPGVQcdjOy0RBSAsq7g2gYoTuLtKry6irlcyKg==",
+  "dgSpecHash": "Va5HovG2gug=",
   "success": true,
-  "projectFilePath": "C:\\Dev\\vcdiff_poc\\VCDiffPoC\\VCDiffPoC\\VCDiffPoC.csproj",
+  "projectFilePath": "D:\\Dev\\vcdiff_poc\\VCDiffPoC\\VCDiffPoC\\VCDiffPoC.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Rajala\\.nuget\\packages\\microsoft.io.recyclablememorystream\\2.2.0\\microsoft.io.recyclablememorystream.2.2.0.nupkg.sha512",
-    "C:\\Users\\Rajala\\.nuget\\packages\\vcdiff\\4.0.1\\vcdiff.4.0.1.nupkg.sha512"
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\hashdepot\\3.1.0\\hashdepot.3.1.0.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\microsoft.io.recyclablememorystream\\2.2.0\\microsoft.io.recyclablememorystream.2.2.0.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\vcdiff\\4.0.1\\vcdiff.4.0.1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\vcdiff_poc\\VCDiffPoC\\VCDiffPoC\\VCDiffPoC.csproj": {}
+    "D:\\Dev\\vcdiff_poc\\VCDiffPoC\\VCDiffPoC\\VCDiffPoC.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\vcdiff_poc\\VCDiffPoC\\VCDiffPoC\\VCDiffPoC.csproj": {
+    "D:\\Dev\\vcdiff_poc\\VCDiffPoC\\VCDiffPoC\\VCDiffPoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\vcdiff_poc\\VCDiffPoC\\VCDiffPoC\\VCDiffPoC.csproj",
+        "projectUniqueName": "D:\\Dev\\vcdiff_poc\\VCDiffPoC\\VCDiffPoC\\VCDiffPoC.csproj",
         "projectName": "VCDiffPoC",
-        "projectPath": "C:\\Dev\\vcdiff_poc\\VCDiffPoC\\VCDiffPoC\\VCDiffPoC.csproj",
-        "packagesPath": "C:\\Users\\Rajala\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\vcdiff_poc\\VCDiffPoC\\VCDiffPoC\\obj\\",
+        "projectPath": "D:\\Dev\\vcdiff_poc\\VCDiffPoC\\VCDiffPoC\\VCDiffPoC.csproj",
+        "packagesPath": "C:\\Users\\JuhanaR\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\vcdiff_poc\\VCDiffPoC\\VCDiffPoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Rajala\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\JuhanaR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -38,12 +38,22 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "HashDepot": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "VCDiff": {
               "target": "Package",
               "version": "[4.0.1, )"
@@ -65,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

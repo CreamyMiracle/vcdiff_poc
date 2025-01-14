@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HashDepot" Version="3.1.0" />
     <PackageReference Include="VCDiff" Version="4.0.1" />
   </ItemGroup>
 
