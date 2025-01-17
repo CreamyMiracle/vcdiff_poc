@@ -6,6 +6,7 @@ using System.Xml.Linq;
 using VCDiff.Decoders;
 using VCDiff.Encoders;
 using VCDiff.Includes;
+using ZstdNet;
 
 namespace VCDiffPoC
 {
@@ -47,6 +48,12 @@ namespace VCDiffPoC
             return dir.Parent.Parent.Parent.Parent.Parent + "\\brotli_encoded";
         }
 
+        private static string ZstdEncoded()
+        {
+            var dir = new DirectoryInfo(Environment.CurrentDirectory);
+            return dir.Parent.Parent.Parent.Parent.Parent + "\\zstd_encoded";
+        }
+
         private static string VCDiffDecoded()
         {
             var dir = new DirectoryInfo(Environment.CurrentDirectory);
@@ -71,11 +78,16 @@ namespace VCDiffPoC
             return dir.Parent.Parent.Parent.Parent.Parent + "\\brotli_decoded";
         }
 
-        private static HashSet<string> _skipExtensions = new HashSet<string> { ".pdf", ".jpg", ".png", ".txt" };
+        private static string ZstdDecoded()
+        {
+            var dir = new DirectoryInfo(Environment.CurrentDirectory);
+            return dir.Parent.Parent.Parent.Parent.Parent + "\\zstd_decoded";
+        }
+
+        private static HashSet<string> _includeExtensions = new HashSet<string> { ".vxp", ".vxm", "" };
 
         static void Main(string[] args)
         {
-            string joo = Original();
             DirectoryInfo ogDir = Directory.CreateDirectory(Original());
             Directory.CreateDirectory(Modified());
             Directory.CreateDirectory(VCDiffEncoded());
@@ -86,6 +98,8 @@ namespace VCDiffPoC
             Directory.CreateDirectory(DeflateDecoded());
             Directory.CreateDirectory(BrotliEncoded());
             Directory.CreateDirectory(BrotliDecoded());
+            Directory.CreateDirectory(ZstdEncoded());
+            Directory.CreateDirectory(ZstdDecoded());
 
             for (int i = 0; i < encodeFuncs.Count; i++)
             {
@@ -103,8 +117,10 @@ namespace VCDiffPoC
                 {
                     j++;
                     string name = file.Name;
-                    if (_skipExtensions.Contains(file.Extension))
+                    string ext = file.Extension;
+                    if (!_includeExtensions.Contains(ext))
                     {
+                        j++;
                         continue;
                     }
 
@@ -116,16 +132,17 @@ namespace VCDiffPoC
 
                     PrintFileResult(funcName, file, encodeDir[i], decodeDir[i], ref totalOgSize, ref totalModSize, ref totalDiffSize, encodeDuration, decodeDuration, false);
                 }
+                Console.WriteLine("Skipped: " + j);
                 PrintTotalResult(funcName, totalModSize, totalOgSize, totalDiffSize, encodeTime[i], decodeTime[i]);
             }
         }
 
-        private static List<Func<string, TimeSpan>> encodeFuncs = new List<Func<string, TimeSpan>> { VCDiffEncode, GZipEncode, DeflateEncode, BrotliEncode };
-        private static List<Func<string, TimeSpan>> decodeFuncs = new List<Func<string, TimeSpan>> { VCDiffDecode, GZipDecode, DeflateDecode, BrotliDecode };
-        private static List<Func<string>> encodeDir = new List<Func<string>> { VCDiffEncoded, GZipEncoded, DeflateEncoded, BrotliEncoded };
-        private static List<Func<string>> decodeDir = new List<Func<string>> { VCDiffDecoded, GZipDecoded, DeflateDecoded, BrotliDecoded };
-        private static List<TimeSpan> encodeTime = new List<TimeSpan> { TimeSpan.Zero, TimeSpan.Zero, TimeSpan.Zero, TimeSpan.Zero };
-        private static List<TimeSpan> decodeTime = new List<TimeSpan> { TimeSpan.Zero, TimeSpan.Zero, TimeSpan.Zero, TimeSpan.Zero };
+        private static List<Func<string, TimeSpan>> encodeFuncs = new List<Func<string, TimeSpan>> { VCDiffEncode, GZipEncode, DeflateEncode, BrotliEncode, ZstdEncode };
+        private static List<Func<string, TimeSpan>> decodeFuncs = new List<Func<string, TimeSpan>> { VCDiffDecode, GZipDecode, DeflateDecode, BrotliDecode, ZstdDecode };
+        private static List<Func<string>> encodeDir = new List<Func<string>> { VCDiffEncoded, GZipEncoded, DeflateEncoded, BrotliEncoded, ZstdEncoded };
+        private static List<Func<string>> decodeDir = new List<Func<string>> { VCDiffDecoded, GZipDecoded, DeflateDecoded, BrotliDecoded, ZstdDecoded };
+        private static List<TimeSpan> encodeTime = new List<TimeSpan> { TimeSpan.Zero, TimeSpan.Zero, TimeSpan.Zero, TimeSpan.Zero, TimeSpan.Zero };
+        private static List<TimeSpan> decodeTime = new List<TimeSpan> { TimeSpan.Zero, TimeSpan.Zero, TimeSpan.Zero, TimeSpan.Zero, TimeSpan.Zero };
 
         private static TimeSpan VCDiffEncode(string name)
         {
@@ -312,6 +329,52 @@ namespace VCDiffPoC
             using var compressedStream = File.Open(diff.FullName, FileMode.Open, FileAccess.Read, FileShare.Read);
             using var decompressedStream = File.Create(dec.FullName);
             using var gzipStream = new BrotliStream(compressedStream, CompressionMode.Decompress);
+
+            DateTime decodeStart = DateTime.Now;
+            gzipStream.CopyTo(decompressedStream);
+            return DateTime.Now - decodeStart;
+        }
+
+        private static TimeSpan ZstdEncode(string name)
+        {
+            DirectoryInfo ogDir = new DirectoryInfo(Original());
+            DirectoryInfo diffDir = new DirectoryInfo(ZstdEncoded());
+
+            FileInfo og = new FileInfo(ogDir.FullName + "\\" + name);
+            FileInfo diff = new FileInfo(diffDir.FullName + "\\" + name);
+
+            if (!og.Exists)
+            {
+                Console.WriteLine("BrotliEncode: File " + name + " does not exist");
+                return TimeSpan.Zero;
+            }
+
+            using var originalStream = File.Open(og.FullName, FileMode.Open, FileAccess.Read, FileShare.Read);
+            using var compressedStream = File.Create(diff.FullName);
+            using var gzipStream = new CompressionStream(compressedStream);
+
+            DateTime encodeStart = DateTime.Now;
+            originalStream.CopyTo(gzipStream);
+            return DateTime.Now - encodeStart;
+        }
+
+        private static TimeSpan ZstdDecode(string name)
+        {
+            DirectoryInfo decompressed = new DirectoryInfo(ZstdDecoded());
+            DirectoryInfo diffDir = new DirectoryInfo(ZstdEncoded());
+
+            FileInfo diff = new FileInfo(diffDir.FullName + "\\" + name);
+            FileInfo dec = new FileInfo(decompressed.FullName + "\\" + name);
+
+            if (!diff.Exists)
+            {
+                Console.WriteLine("BrotliDecode: File " + name + " does not exist");
+                return TimeSpan.Zero;
+            }
+
+            using var compressedStream = File.Open(diff.FullName, FileMode.Open, FileAccess.Read, FileShare.Read);
+            using var decompressedStream = File.Create(dec.FullName);
+            using var gzipStream = new DecompressionStream(compressedStream);
 
             DateTime decodeStart = DateTime.Now;
             gzipStream.CopyTo(decompressedStream);
